@@ -2,24 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from "react";
-import slide1 from "../public/AppREMO-DĂNG-KÝ-DIỆN-TỬ.jpg"
-import slide2 from "../public/EXEX-QUẢN-LÝ-BÁN-HÀNG.jpg"
-import slide3 from "../public/EXEX-QUẢN-LÝ-SẢN-XUẤT.jpg"
-import slide4 from "../public/iReporter-báo-cáo-diện-tử.jpg"
-import slide5 from "../public/Asprova-Quản-lý-lịch-sản-xuất.jpg"
-import slide6 from "../public/BizMobile-quản-lý-thiết-bị-di-dộng.jpg"
-import slide7 from "../public/Logizard-Quản-lý-kho.jpg"
-import slide8 from "../public/MC-Web-controller-do-hiệu-suất-máy-sản-xuất.jpg"
-import slide9 from "../public/EXEX-QUẢN-LÝ-NHÂN-SỰ-TIỀN-LƯƠNG.jpg"
 import Link from 'next/link';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import dynamic from 'next/dynamic'
+
 var $ = require("jquery");
 if(typeof window !== "undefined"){
     window.$ =window.jQuery = require("jquery");
 }
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import dynamic from 'next/dynamic'
 const OwlCarousel = dynamic(()=> import("react-owl-carousel"),{
     ssr: false,
 })
@@ -59,7 +51,7 @@ export default function Home() {
       <br />
       <img src="/ja.png" alt="Image" />
       </li>
-        <li><Link href="/about" prefetch={true}>About</Link></li>
+        <li><Link href="/about">About</Link></li>
       </ul>
     </div>
   </div>
@@ -67,14 +59,14 @@ export default function Home() {
 
 <div id="myCarousel" className="carousel slide" data-ride="carousel">
     <ol className="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="0" className="active"></li>&nbsp;
+      <li data-target="#myCarousel" data-slide-to="1"></li>&nbsp;
+      <li data-target="#myCarousel" data-slide-to="2"></li>&nbsp;
     </ol>
 
     <div className="carousel-inner" role="listbox">
       <div className="item active">
-        <img src="/dặc-trưng-diểm-mạnh-Cty1.jpg" style={{width: '100%'}} alt="Image" />
+        <img src="/EXECompany.jpg" style={{width: '100%'}} alt="Image" />
         <div className="carousel-caption">
         <h1 style={{backgroundColor: '#931845'}}>KINH NGHIỆM HÀNG ĐẦU</h1>
         <h1 style={{backgroundColor: '#931845'}}>ĐỘI NGŨ CHUYÊN NGHIỆP</h1>
@@ -115,39 +107,39 @@ export default function Home() {
               autoplayHoverPause={true}
               nav={true}>
             <div className="item">
-                <Image src={slide1} />
+                <img src="/AppREMO.jpg" alt="Image" />
                 <h1>Phần mềm đăng ký điện tử AppRemo</h1>
             </div>
             <div className="item">
-                <Image src={slide2} />
+            <img src="/EXEX-QLBH.jpg" alt="Image" />
                 <h1>Phần mềm quản lý bán hàng EXEX</h1>
             </div>
             <div className="item">
-                <Image src={slide3} />
+            <img src="/EXEX-QLSX.jpg" alt="Image" />
                 <h1>Phần mềm quản lý sản xuất EXEX</h1>
             </div>
             <div className="item">
-                <Image src={slide4} />
+            <img src="/iReporter.jpg" alt="Image" />
                 <h1>Phần mềm báo cáo điện tử iReporter</h1>
             </div>
             <div className="item">
-                <Image src={slide5} />
+            <img src="/Asprova.jpg" alt="Image" />
                 <h1>Phần mềm quản lý lịch sản xuất Asprova</h1>
             </div>
             <div className="item">
-                <Image src={slide6} />
+            <img src="/BizMobile.jpg" alt="Image" />
                 <h1>Phần mềm quản lý thiết bị di động BizMobile</h1>
             </div>
             <div className="item">
-                <Image src={slide7} />
+            <img src="/Logizard.jpg" alt="Image" />
                 <h1>Phần mềm quản lý kho Logizard</h1>
             </div>
             <div className="item">
-                <Image src={slide8} />
+            <img src="/MC-Web-controller.jpg" alt="Image" />
                 <h1>Phần mềm đo hiệu suất máy sản xuất MC-Web Controller</h1>
             </div>
             <div className="item">
-                <Image src={slide9} />
+            <img src="/EXEX-QLNSTL.jpg" alt="Image" />
                 <h1>Phần mềm quản lý nhân sự tiền lương EXEX</h1>
             </div>
         </OwlCarousel>

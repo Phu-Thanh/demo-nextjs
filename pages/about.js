@@ -15,12 +15,12 @@ export default function Home() {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </Head>
 <body>
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
+<div className="container-fluid">
+  <div className="row content">
+    <div className="col-sm-3 sidenav">
       <h1>VỀ CHÚNG TÔI</h1>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">
+      <ul className="nav nav-pills nav-stacked">
+        <li className="active"><a href="#section1">
         Công ty TNHH SYSTEMEXE Việt Nam</a></li>
         <li><a href="#section2">Thành lập: 10/2010</a></li>
         <li><a href="#section3">Vốn điều lệ: 300.000 USD</a></li>
@@ -29,7 +29,7 @@ export default function Home() {
       </ul><br />
     </div>
 
-    <div class="col-sm-5">
+    <div className="col-sm-5">
       <h1>LỜI CHÀO TỪ LÃNH ĐẠO</h1>
       <hr />
       <h2>Con người – Giá trị cốt lõi của mọi giá trị</h2>
@@ -42,7 +42,7 @@ export default function Home() {
       <br /><br />
     </div>
 
-    <div class="col-sm-4">
+    <div className="col-sm-4">
     <Image src={slide9} />
     </div>
   </div>

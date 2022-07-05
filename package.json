@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "CI=false npm run build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,8 +13,7 @@
     "owl.carousel": "^2.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-owl-carousel": "^2.3.3",
-    "react-scripts": "^5.0.1"
+    "react-owl-carousel": "^2.3.3"
   },
   "devDependencies": {
     "eslint": "8.19.0",
