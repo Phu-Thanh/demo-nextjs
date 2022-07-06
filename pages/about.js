@@ -42,7 +42,7 @@ export default function Home() {
       <br /><br />
     </div>
 
-    <div className="col-sm-4">
+    <div className="col-sm-4" style={{marginTop: '80px'}}>
     <Image src={slide9} />
     </div>
   </div>
