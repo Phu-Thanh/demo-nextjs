@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import slide9 from "../public/IMG_9456-533x800.jpg"
+import slide9 from "../public/Thanh.jpg"
 
 export default function Home() {
     return (
